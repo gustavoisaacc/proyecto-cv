@@ -15,6 +15,10 @@ body{
 
 }
 
+i{
+    margin-right: 1rem;
+}
+
 .container{
     max-width: 1200px;
     width: 95%;
@@ -43,3 +47,18 @@ body{
 .green{
     color: #28b13f;
 }
+
+.span{
+    background: $gray;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.width{
+    width: 10px;
+}
+
+
+

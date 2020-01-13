@@ -16,6 +16,10 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+i {
+  margin-right: 1rem;
+}
+
 .container {
   max-width: 1200px;
   width: 95%;
@@ -52,6 +56,18 @@ body {
 
 .green {
   color: #28b13f;
+}
+
+.span {
+  background: #dadada;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.width {
+  width: 10px;
 }
 
 .header {
@@ -266,7 +282,7 @@ body {
       -ms-flex: 0 0 60%;
           flex: 0 0 60%;
   background-color: #fff;
-  height: 500px;
+  height: 550px;
   margin: auto;
   padding-left: 70px;
   padding-top: 2rem;
@@ -277,6 +293,7 @@ body {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding-bottom: 20rem;
   }
 }
 
@@ -303,31 +320,51 @@ body {
 }
 
 .main .sobre-mi .datos li span {
-  background: #dadada;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  font-weight: bold;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.main .sobre-mi .studen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.main .sobre-mi .studen:after {
+  content: '';
+  background: #f2f2f2;
+  height: 20rem;
+  width: .2rem;
+  position: absolute;
+  left: 45%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-radius: 50%;
 }
 
 .main .sobre-mi .estudios {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   list-style: none;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .main .sobre-mi .estudios li {
   padding: 1rem 0;
+  position: relative;
 }
 
 .main .sobre-mi .estudios li ul {
-  margin-left: 25%;
-}
-
-.main .sobre-mi .estudios li span {
-  background: #dadada;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  font-weight: bold;
-  margin-right: 1rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .menu {
@@ -350,7 +387,6 @@ body {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-right: 0;
   }
 }
 
