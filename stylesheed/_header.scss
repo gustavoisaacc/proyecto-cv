@@ -3,17 +3,13 @@
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
-
-    .menu{
-        flex: 0 0 calc(10% - 1rem);
-        a{
-            display: block;
-        }
-    }
+    z-index: 100;
 
     .perfil{
         flex: 0 0 90%;
         background-color: $gray;
+        box-shadow: 10px -5px 11px -8px #393938;
+
        
 
         .portada{

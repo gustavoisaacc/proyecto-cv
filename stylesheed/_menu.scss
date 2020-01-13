@@ -1,0 +1,18 @@
+.menu{
+ 
+    flex: 0 0 calc(10% - 2rem);
+
+    margin-right: 1rem;
+    background: $gray;
+    height: 200px;
+  
+    a{
+        display: block;
+        text-decoration: none;
+        color: $black;
+        padding: 2rem .5rem;
+        text-shadow: 10px 5px 10px $black;
+
+       
+    }
+}
