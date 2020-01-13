@@ -11,7 +11,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  background: linear-gradient(45deg, rgba(101, 200, 14, 0.96) 0%, rgba(101, 200, 14, 0.92) 17%, rgba(175, 245, 0, 0.73) 100%);
+  background: -webkit-gradient(linear, left top, right bottom, from(#50a3a2), to(#78cc6d));
+  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -30,6 +31,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .cv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .red {
@@ -59,13 +69,26 @@ body {
   /*datos personales*/
 }
 
+@media (max-width: 767px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .perfil {
+    margin: 2rem 0;
+  }
+}
+
 .header .perfil {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 90%;
           flex: 0 0 90%;
-  background-color: #f2f2f2;
+  background-color: #fff;
   -webkit-box-shadow: 10px -5px 11px -8px #393938;
           box-shadow: 10px -5px 11px -8px #393938;
+  position: relative;
 }
 
 .header .perfil .portada {
@@ -109,15 +132,21 @@ body {
   /*info*/
 }
 
+@media (max-width: 767px) {
+  .header .datos-personales {
+    padding-bottom: 50px;
+  }
+}
+
 .header .datos-personales .info {
   text-align: center;
 }
 
 .header .datos-personales .info ul {
   list-style: none;
-  font-size: 20px;
-  height: 20px;
-  line-height: 20px;
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
   overflow: hidden;
 }
 
@@ -135,15 +164,35 @@ body {
 }
 
 .header .datos-personales .sociales {
-  display: block;
-  text-align: center;
   margin: 1rem 0;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .header .datos-personales .sociales a {
   padding: 0 1rem;
   text-decoration: none;
   font-size: 4rem;
+}
+
+@media (max-width: 976px) {
+  .header .datos-personales .sociales {
+    left: 25%;
+    -webkit-transform: translate(-10%);
+            transform: translate(-10%);
+  }
+}
+
+@media (max-width: 767px) {
+  .header .datos-personales .sociales {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    margin-top: 2rem;
+  }
 }
 
 /*header*/
@@ -154,23 +203,23 @@ body {
     color: orangered;
   }
   25%, 50% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     color: #006eff;
   }
   55%, 80% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
     color: rgba(255, 187, 0, 0.876);
   }
   85% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     color: #006eff;
   }
   90% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     color: #006eff;
   }
   100% {
@@ -186,23 +235,23 @@ body {
     color: orangered;
   }
   25%, 50% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     color: #006eff;
   }
   55%, 80% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
     color: rgba(255, 187, 0, 0.876);
   }
   85% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     color: #006eff;
   }
   90% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     color: #006eff;
   }
   100% {
@@ -216,10 +265,69 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60%;
           flex: 0 0 60%;
-  background-color: #f2f2f2;
+  background-color: #fff;
   height: 500px;
   margin: auto;
   padding-left: 70px;
+  padding-top: 2rem;
+}
+
+@media (max-width: 767px) {
+  .main {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.main .sobre-mi h3 {
+  width: 100%;
+  background: #8ecf0c;
+  border-radius: 2rem 0 0 2rem;
+  padding-left: 1rem;
+}
+
+.main .sobre-mi .datos {
+  list-style: none;
+  padding: 1rem;
+}
+
+.main .sobre-mi .datos li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5rem 0;
+}
+
+.main .sobre-mi .datos li span {
+  background: #dadada;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.main .sobre-mi .estudios {
+  list-style: none;
+  padding: 1rem;
+}
+
+.main .sobre-mi .estudios li {
+  padding: 1rem 0;
+}
+
+.main .sobre-mi .estudios li ul {
+  margin-left: 25%;
+}
+
+.main .sobre-mi .estudios li span {
+  background: #dadada;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  margin-right: 1rem;
 }
 
 .menu {
@@ -227,8 +335,23 @@ body {
       -ms-flex: 0 0 calc(10% - 2rem);
           flex: 0 0 calc(10% - 2rem);
   margin-right: 1rem;
-  background: #f2f2f2;
+  background: #fff;
   height: 200px;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-right: 0;
+  }
 }
 
 .menu a {
@@ -237,5 +360,9 @@ body {
   color: #000;
   padding: 2rem .5rem;
   text-shadow: 10px 5px 10px #000;
+}
+
+.menu a:hover {
+  color: #8ecf0c;
 }
 /*# sourceMappingURL=styles.css.map */

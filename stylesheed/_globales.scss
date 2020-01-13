@@ -10,7 +10,7 @@ html{
 
 body{
     font-size: 1.6rem;
-    background: linear-gradient(45deg, rgba(101,200,14,0.96) 0%, rgba(101,200,14,0.92) 17%, rgba(175,245,0,0.73) 100%);
+    background: linear-gradient(to bottom right,#50a3a2 0%,#78cc6d 100%);
     font-family: 'PT Sans', sans-serif;
 
 }
@@ -26,6 +26,10 @@ body{
 .cv{
     display: flex;
     justify-content: space-between;
+
+    @media  (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .red{

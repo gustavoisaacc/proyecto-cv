@@ -1,7 +1,62 @@
 .main{
     flex: 0 0 60%;
-    background-color: $gray;
+    background-color: $white;
     height: 500px;
     margin: auto;
     padding-left: 70px;
+    padding-top: 2rem;
+
+
+    @media  (max-width: 767px) {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .sobre-mi {
+         h3{
+             width: 100%;
+             background: $green;
+             border-radius: 2rem 0 0 2rem;
+             padding-left: 1rem;
+         }
+         .datos{
+             list-style: none;
+             padding: 1rem ;
+             
+             li{
+                display: flex;
+                justify-content: space-between;
+                padding: .5rem 0;
+
+                span{
+                    background: $gray;
+                    padding: 0.5rem;
+                    border-radius: 1rem;
+                    font-weight: bold;
+                }
+             }
+         }
+
+         .estudios{
+            list-style: none;
+            padding: 1rem ;
+            li{
+               padding: 1rem 0;
+               ul{
+                  margin-left: 25%;
+               }
+               span{
+                background: $gray;
+                padding: 0.5rem;
+                border-radius: 1rem;
+                font-weight: bold;
+                margin-right: 1rem;
+               }
+            }
+             
+         }
+    }
+
 }
+

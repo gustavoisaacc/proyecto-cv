@@ -4,13 +4,19 @@
     justify-content: space-between;
     margin: 2rem 0;
     z-index: 100;
+    @media  (max-width: 767px) {
+        flex-direction: column;
+
+        .perfil{
+            margin: 2rem 0;
+        }
+    }
 
     .perfil{
         flex: 0 0 90%;
-        background-color: $gray;
+        background-color: $white;
         box-shadow: 10px -5px 11px -8px #393938;
-
-       
+        position: relative;
 
         .portada{
             background: url('../images/web.jpg');
@@ -51,14 +57,18 @@
         margin-top: 5rem;
         font-family: $ptNarow;
 
+        @media (max-width:767px) {
+            padding-bottom: 50px;
+        }
+
         .info{
             text-align: center;
 
             ul {
                 list-style: none;
-                font-size: 20px;
-                height: 20px;
-                line-height: 20px;
+                font-size: 30px;
+                height: 30px;
+                line-height: 30px;
                 overflow: hidden;
 
                 
@@ -78,16 +88,29 @@
         }/*info*/
 
         .sociales{
-            display:block;
-            text-align: center;
             margin: 1rem 0;
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%);
             a{
                 padding: 0 1rem;
                 text-decoration: none;
                 font-size: 4rem;
+               
 
             }
+            @media (max-width:976px){
+                left: 25%;
+                transform: translate(-10%);
+            }
 
+            @media  (max-width: 767px) {
+                left: 50%;
+                transform: translate(-50%);
+                 margin-top: 2rem;
+              
+            }
         }
 
     }/*datos personales*/
@@ -99,13 +122,13 @@
     0%,20%{transform: translateY(0); color: orangered;}
    
 
-    25%, 50%{transform: translateY(-20px); color: rgb(0, 110, 255);}
+    25%, 50%{transform: translateY(-30px); color: rgb(0, 110, 255);}
   
-    55%,80%{transform: translateY(-40px); color: rgba(255, 187, 0, 0.876);}
+    55%,80%{transform: translateY(-60px); color: rgba(255, 187, 0, 0.876);}
    
 
-    85%{transform: translateY(-20px); color: rgb(0, 110, 255);}
-    90%{transform: translateY(-20px); color: rgb(0, 110, 255);}
+    85%{transform: translateY(-30px); color: rgb(0, 110, 255);}
+    90%{transform: translateY(-30px); color: rgb(0, 110, 255);}
 
     100%{transform: translateY(0); color: orangered;}
 
