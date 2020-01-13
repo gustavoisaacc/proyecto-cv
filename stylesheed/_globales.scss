@@ -1,0 +1,41 @@
+html{
+    font-size: 62.5%;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, rgba(101,200,14,0.96) 0%, rgba(101,200,14,0.92) 17%, rgba(175,245,0,0.73) 100%);
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.container{
+    max-width: 1200px;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    padding: 1px;
+}
+
+.cv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.red{
+    color: #d5303e;
+}
+
+.blue{
+    color: #49678d;
+}
+
+.green{
+    color: #28b13f;
+}

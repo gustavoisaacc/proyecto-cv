@@ -1,0 +1,116 @@
+.header{
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+    .menu{
+        flex: 0 0 calc(10% - 1rem);
+        a{
+            display: block;
+        }
+    }
+
+    .perfil{
+        flex: 0 0 90%;
+        background-color: $gray;
+       
+
+        .portada{
+            background: url('../images/web.jpg');
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 200px;
+            position: relative;
+           
+            .foto{ 
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+               
+                img{
+                 width: 150px;
+                 height: 150px;
+                 border-radius: 50%;
+                }
+            }
+            &:before{
+                content: '';
+                width: 17rem;
+                height: 100px;
+                background-color: transparent;
+                position: absolute;
+                left: -10%;
+                bottom: -10%;
+                transform: rotate(30deg);
+               
+            }
+        
+        }   
+    }
+
+    .datos-personales{
+        margin-top: 5rem;
+        font-family: $ptNarow;
+
+        .info{
+            text-align: center;
+
+            ul {
+                list-style: none;
+                font-size: 20px;
+                height: 20px;
+                line-height: 20px;
+                overflow: hidden;
+
+                
+                li{
+                    position: relative;
+                    animation: text 7s 1s infinite alternate;
+                }
+
+            }
+
+            span{
+                display: block;
+                margin: 1rem 0;
+                color: $green;
+                font-size: 2.5rem;
+            }
+        }/*info*/
+
+        .sociales{
+            display:block;
+            text-align: center;
+            margin: 1rem 0;
+            a{
+                padding: 0 1rem;
+                text-decoration: none;
+                font-size: 4rem;
+
+            }
+
+        }
+
+    }/*datos personales*/
+
+}/*header*/
+
+@keyframes text{
+
+    0%,20%{transform: translateY(0); color: orangered;}
+   
+
+    25%, 50%{transform: translateY(-20px); color: rgb(0, 110, 255);}
+  
+    55%,80%{transform: translateY(-40px); color: rgba(255, 187, 0, 0.876);}
+   
+
+    85%{transform: translateY(-20px); color: rgb(0, 110, 255);}
+    90%{transform: translateY(-20px); color: rgb(0, 110, 255);}
+
+    100%{transform: translateY(0); color: orangered;}
+
+}
