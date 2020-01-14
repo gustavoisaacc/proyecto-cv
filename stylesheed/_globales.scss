@@ -55,10 +55,52 @@ i{
     font-weight: bold;
     margin-right: 1rem;
 }
-
-.width{
-    width: 10px;
+.sobre-mi{
+    display: none;
 }
 
+.active{
+    display: block;
+}
 
+.btn{
+    border-radius: 1rem;
+    margin: 1rem 0;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #dadada;
+    text-decoration: none;
+    margin-right: 1rem;
+    box-shadow: 3px -3px 5px -1px rgb(87, 85, 85)inset  ;
+    float: right;
+    overflow: hidden;
 
+}
+
+.btn-primary{
+    background: $green;
+}
+
+.btn:hover{
+    background: rgb(32, 156, 0);
+    box-shadow: 3px -3px 5px -1px #fff inset ;
+}
+
+.main::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    background-color: greenyellow;
+
+    // display: none;  /* Ocultar scroll */
+}
+
+.main::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 4px;
+   
+}
+
+.main::-webkit-scrollbar-track, body::-webkit-scrollbar-track  {
+    background: #e1e1e1;
+    border-radius: 4px;
+}

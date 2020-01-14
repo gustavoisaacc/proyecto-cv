@@ -3,7 +3,6 @@
     flex: 0 0 calc(10% - 2rem);
 
     margin-right: 1rem;
-    background: $white;
     height: 200px;
     @media (max-width: 767px){
         display: flex;
@@ -17,7 +16,7 @@
         color: $black;
         padding: 2rem .5rem;
         text-shadow: 10px 5px 10px $black;
-
+        background: $white;
         &:hover{
             color: $green;
         }
