@@ -41,7 +41,6 @@ i {
 @media (max-width: 767px) {
   .cv {
     display: block;
-    height: 100vh;
   }
 }
 
@@ -245,7 +244,7 @@ i {
   font-size: 4rem;
 }
 
-@media (max-width: 976px) {
+@media (min-width: 768px) {
   .header .datos-personales .sociales {
     left: 25%;
     -webkit-transform: translate(-10%);
@@ -498,7 +497,7 @@ i {
           flex: 0 0 calc(10% - 2rem);
   background: #E7EBDA;
   margin-right: 1rem;
-  height: 15rem;
+  height: 16rem;
 }
 
 @media (max-width: 767px) {
@@ -532,5 +531,6 @@ i {
 
 .menu a:hover {
   color: #8ecf0c;
+  background: green;
 }
 /*# sourceMappingURL=styles.css.map */
