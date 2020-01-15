@@ -41,6 +41,7 @@ i {
 @media (max-width: 767px) {
   .cv {
     display: block;
+    height: 100vh;
   }
 }
 
