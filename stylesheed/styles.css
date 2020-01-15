@@ -473,6 +473,7 @@ i {
   padding: 2rem .5rem;
   text-shadow: 10px 5px 10px #000;
   background: #fff;
+  text-align: center;
 }
 
 .menu a:hover {
