@@ -39,7 +39,7 @@
                 padding: .5rem 0;
                 span{
                     
-                    flex: 0 0 50%;
+                    flex: 0 1 50%;
                 }
             }
         }
@@ -56,10 +56,23 @@
                 width: .2rem;
                 position: absolute;
                 left: 45%;
+                top: 0;
                 transform: translate(-50%); 
                 border-radius: 50%;
 
+                @media (max-width:500px) {
+                    background: none;
+                    
+                }
+
             }
+
+            @media (max-width:500px) {
+                flex-direction: column;
+                
+            }
+            
+
         }
         
         .estudios{
@@ -76,6 +89,12 @@
                 }
               
             }
+
+            @media (max-width:500px) {
+                flex: 1 1 100%;
+                margin-bottom: 17rem;
+                
+            }
             
         }
 
@@ -87,6 +106,10 @@
             .col {
                 width: 50%;
                 @media (max-width: 767px){
+                    width: 50%;
+                }
+
+                @media (max-width: 500px){
                     width: 100%;
                 }
 

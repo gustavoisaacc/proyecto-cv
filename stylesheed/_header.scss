@@ -72,8 +72,7 @@
                 font-size: 30px;
                 height: 30px;
                 line-height: 30px;
-                overflow: hidden;
-
+                overflow: hidden;  
                 
                 li{
                     position: relative;
@@ -114,6 +113,14 @@
                  margin-top: 2rem;
               
             }
+
+            @media (max-width: 450px){
+                
+                a{
+                    font-size: 3rem;
+                    padding: 0 .5rem;
+                }
+            }
         }
 
     }/*datos personales*/
@@ -135,4 +142,7 @@
 
     100%{transform: translateY(0); color: orangered;}
 
+  
 }
+
+
