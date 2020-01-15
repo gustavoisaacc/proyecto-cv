@@ -205,6 +205,12 @@ i {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .header .datos-personales .info {
+    padding-bottom: 5rem;
+  }
+}
+
 .header .datos-personales .info ul {
   list-style: none;
   font-size: 30px;
