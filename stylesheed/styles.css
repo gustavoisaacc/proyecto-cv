@@ -40,10 +40,7 @@ i {
 
 @media (max-width: 767px) {
   .cv {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
   }
 }
 
