@@ -86,6 +86,9 @@
 
             .col {
                 width: 50%;
+                @media (max-width: 767px){
+                    width: 100%;
+                }
 
                 img{
                     width: 100%;
