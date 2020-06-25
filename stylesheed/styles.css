@@ -49,6 +49,10 @@ i {
   color: #28b13f;
 }
 
+.opacity:hover {
+  opacity: 0.5;
+}
+
 .span {
   background: #dadada;
   padding: 0.5rem;
