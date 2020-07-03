@@ -30,6 +30,7 @@ i{
 .cv{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     @media  (max-width: 767px) {
         display: block;
@@ -67,8 +68,8 @@ i{
 
 .active{
     display: block;
-}
 
+}
 
 
 .btn{

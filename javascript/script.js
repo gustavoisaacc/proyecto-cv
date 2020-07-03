@@ -25,18 +25,13 @@ const menu = document.querySelectorAll('.menu a');
 menu.forEach(function(item){
     item.addEventListener('click', function(e){
         e.preventDefault();
-
+     
         const datos = document.querySelectorAll('.sobre-mi')
         datos.forEach(function(info){
             info.classList.toggle('active');
-         
-
-        })
-        
-        
+        })    
 
     })
-       
 
 })
 
