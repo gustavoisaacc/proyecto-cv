@@ -89,6 +89,10 @@ i {
   background: #e1e1e1;
   border-radius: 4px; }
 
+.activo {
+  background: green;
+  color: #fff !important; }
+
 .header {
   flex: 0 0 40%;
   display: flex;
