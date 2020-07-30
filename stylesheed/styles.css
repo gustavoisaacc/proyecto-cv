@@ -12,6 +12,12 @@ body {
   background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
   font-family: 'PT Sans', sans-serif; }
 
+a {
+  font-family: 'PT Sans', sans-serif;
+  color: #000;
+  font-size: 1em;
+  text-decoration: none; }
+
 i {
   margin-right: 1rem; }
 
@@ -52,7 +58,7 @@ i {
 .sobre-mi {
   display: none; }
 
-.active {
+.show {
   display: block; }
 
 .btn {
@@ -88,6 +94,10 @@ i {
 .main::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
   background: #e1e1e1;
   border-radius: 4px; }
+
+.activo {
+  background-color: #90d30c;
+  color: white !important; }
 
 .header {
   flex: 0 0 40%;
@@ -276,10 +286,10 @@ i {
     justify-content: space-between;
     flex-wrap: wrap; }
     .main .sobre-mi .row .col {
-      width: 50%; }
+      width: 45%; }
       @media (max-width: 767px) {
         .main .sobre-mi .row .col {
-          width: 50%; } }
+          width: 45%; } }
       @media (max-width: 500px) {
         .main .sobre-mi .row .col {
           width: 100%; } }
@@ -311,7 +321,7 @@ i {
     text-shadow: 10px 5px 10px #000;
     text-align: center; }
     .menu a:hover {
-      color: #8ecf0c;
-      background: green; }
+      color: white;
+      background: #32a703; }
 
 /*# sourceMappingURL=styles.css.map */

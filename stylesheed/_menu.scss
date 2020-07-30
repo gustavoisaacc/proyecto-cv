@@ -24,10 +24,11 @@
         text-shadow: 10px 5px 10px $black;
         text-align: center;
         &:hover{
-            color: $green;
-            background: green;
+            color: white;
+            background: rgb(50, 167, 3);
         }
 
     }
 
+    
 }

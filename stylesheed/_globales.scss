@@ -15,6 +15,14 @@ body{
 
 }
 
+a{
+    font-family: 'PT Sans', sans-serif;
+    color: #000;
+    font-size: 1em;
+    text-decoration: none;
+
+}
+
 i{
     margin-right: 1rem;
 }
@@ -66,7 +74,7 @@ i{
     display: none;
 }
 
-.active{
+.show{
     display: block;
 
 }
@@ -115,3 +123,7 @@ i{
     border-radius: 4px;
 }
 
+.activo{
+    background-color: #90d30c;
+    color: white !important; 
+}
