@@ -272,19 +272,9 @@ h4 {
       padding: .5rem 0; }
       .main .sobre-mi .datos li span {
         flex: 0 1 50%; }
-  .main .sobre-mi .studen:after {
-    content: '';
-    background: #f2f2f2;
-    height: 20rem;
-    width: .2rem;
-    position: absolute;
-    left: 45%;
-    top: 0;
-    transform: translate(-50%);
-    border-radius: 50%; }
-    @media (max-width: 500px) {
-      .main .sobre-mi .studen:after {
-        background: none; } }
+  @media (max-width: 500px) {
+    .main .sobre-mi .studen {
+      background: none; } }
   @media (max-width: 500px) {
     .main .sobre-mi .studen {
       flex-direction: column; } }

@@ -32,13 +32,11 @@
         .datos{
             list-style: none;
             padding: 1rem ;
-            
             li{
                 display: flex;
                 justify-content: space-between;
                 padding: .5rem 0;
                 span{
-                    
                     flex: 0 1 50%;
                 }
             }
@@ -46,21 +44,8 @@
 
         .studen{
 
-            &:after{
-                content: '';
-                background: #f2f2f2;
-                height: 20rem;
-                width: .2rem;
-                position: absolute;
-                left: 45%;
-                top: 0;
-                transform: translate(-50%); 
-                border-radius: 50%;
-
-                @media (max-width:500px) {
-                    background: none;
-
-                }
+            @media (max-width:500px) {
+                background: none;
 
             }
 
