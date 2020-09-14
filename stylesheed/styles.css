@@ -70,7 +70,6 @@ i {
   text-decoration: none;
   margin-right: 1rem;
   box-shadow: 3px -3px 5px -1px #575555 inset;
-  float: right;
   overflow: hidden; }
 
 .btn-primary {
@@ -98,6 +97,33 @@ i {
 .activo {
   background-color: #90d30c;
   color: white !important; }
+
+.estudios ul li .after {
+  content: "ssss";
+  background: #e1e1e1;
+  height: 15px;
+  width: 173px;
+  border-radius: 22px;
+  position: relative; }
+
+.cantidad {
+  background: #28b13f;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  border-radius: 22px; }
+
+.medium {
+  width: 50%; }
+
+.min {
+  width: 30%; }
+
+.alta {
+  width: 70%; }
+
+h4 {
+  margin: 25px 0; }
 
 .header {
   flex: 0 0 40%;
@@ -246,33 +272,32 @@ i {
       padding: .5rem 0; }
       .main .sobre-mi .datos li span {
         flex: 0 1 50%; }
-  .main .sobre-mi .studen {
-    display: flex;
-    justify-content: space-between;
-    position: relative; }
-    .main .sobre-mi .studen:after {
-      content: '';
-      background: #f2f2f2;
-      height: 20rem;
-      width: .2rem;
-      position: absolute;
-      left: 45%;
-      top: 0;
-      transform: translate(-50%);
-      border-radius: 50%; }
-      @media (max-width: 500px) {
-        .main .sobre-mi .studen:after {
-          background: none; } }
+  .main .sobre-mi .studen:after {
+    content: '';
+    background: #f2f2f2;
+    height: 20rem;
+    width: .2rem;
+    position: absolute;
+    left: 45%;
+    top: 0;
+    transform: translate(-50%);
+    border-radius: 50%; }
     @media (max-width: 500px) {
-      .main .sobre-mi .studen {
-        flex-direction: column; } }
+      .main .sobre-mi .studen:after {
+        background: none; } }
+  @media (max-width: 500px) {
+    .main .sobre-mi .studen {
+      flex-direction: column; } }
   .main .sobre-mi .estudios {
-    flex: 0 0 50%;
     list-style: none;
     padding: 0.5rem; }
     .main .sobre-mi .estudios li {
+      display: flex;
+      justify-content: space-between;
       padding: 1rem 0;
-      position: relative; }
+      position: relative;
+      display: flex;
+      width: 100%; }
       .main .sobre-mi .estudios li ul {
         position: absolute;
         left: 50%;

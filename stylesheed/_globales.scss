@@ -89,8 +89,7 @@ i{
     color: #dadada;
     text-decoration: none;
     margin-right: 1rem;
-    box-shadow: 3px -3px 5px -1px rgb(87, 85, 85)inset  ;
-    float: right;
+    box-shadow: 3px -3px 5px -1px rgb(87, 85, 85)inset;
     overflow: hidden;
 
 }
@@ -126,4 +125,34 @@ i{
 .activo{
     background-color: #90d30c;
     color: white !important; 
+}
+
+.estudios ul li .after{
+    content: "ssss";
+    background: #e1e1e1;
+    height: 15px;
+    width: 173px;
+    border-radius: 22px;
+    position: relative;
+}
+
+.cantidad{
+    background: #28b13f;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    border-radius: 22px;
+}
+
+.medium{
+    width: 50%;
+}
+.min{
+    width: 30%;
+}
+.alta{
+    width: 70%;
+}
+h4{
+    margin: 25px 0;
 }

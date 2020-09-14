@@ -43,11 +43,8 @@
                 }
             }
         }
-        
+
         .studen{
-            display: flex;
-            justify-content: space-between;
-            position: relative;
 
             &:after{
                 content: '';
@@ -62,40 +59,43 @@
 
                 @media (max-width:500px) {
                     background: none;
-                    
+
                 }
 
             }
 
             @media (max-width:500px) {
                 flex-direction: column;
-                
+
             }
-            
+
 
         }
-        
+
         .estudios{
-            flex: 0 0 50%;
             list-style: none;
             padding: .5rem ;
             li{
+                display: flex;
+                justify-content: space-between;
                 padding: 1rem 0;
                 position: relative;
+                display: flex;
+                width: 100%;
                 ul{
                     position: absolute;
                     left: 50%;
-                    transform: translate(-50%);         
+                    transform: translate(-50%);
                 }
-              
+
             }
 
             @media (max-width:500px) {
                 flex: 1 1 100%;
                 margin-bottom: 17rem;
-                
+
             }
-            
+
         }
 
         .row {
